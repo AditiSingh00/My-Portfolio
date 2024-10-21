@@ -1,15 +1,15 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import pic from '../../images/hero-image.png';
 import { Typewriter } from 'react-simple-typewriter'
 import { FaSquareXTwitter, FaLinkedin, FaSquareGithub } from 'react-icons/fa6';
 import './styles.scss';
 
 function Home() {
-  const navigate = useNavigate();
-
   const handleNavigate = () => {
-    navigate('/contact');
+    const section = document.getElementById('contact');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
