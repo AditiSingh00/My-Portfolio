@@ -1,11 +1,12 @@
 .about_sec {
-  margin-top: 60px;
+  margin-top: 40px;
   z-index: 1;
-  margin-left: 10%;
+  margin-left: 8%;
+  margin-right: 8%;
   
 
   .heading {
-    padding-top: 100px;
+    padding-top: 110px;
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 40px;
@@ -62,7 +63,7 @@
 
   @media (max-width: 768px) {
     margin: 50px auto 0;
-    width: 100%;
+    width: 75%;
   }
 
   .wrapper {
@@ -104,7 +105,7 @@
   max-width: 1100px;
   gap: 12px;
 
-  @media (max-width: 960px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 }

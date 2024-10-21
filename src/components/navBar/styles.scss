@@ -42,10 +42,10 @@ body {
 
 .nav_icon {
   display: none;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     display: block;
-    cursor: pointer;
     position: absolute;
     top: 20px;
     right: 20px;
