@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import pdf from '../../images/Resume1.pdf'
 import { FaAppStore, FaUser, FaCode } from 'react-icons/fa6';
 import { FaHome, FaBars, FaTimes, FaAddressBook ,FaFileAlt} from 'react-icons/fa';
 import './styles.scss';
@@ -20,7 +20,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar">
         <div className="navbar_container">
-          <a href='#home' className="logo" onClick={(e) => handleClick(e, 'home')}>
+          <a href="#home" className="logo" onClick={(e) => handleClick(e, 'home')}>
             <FaAppStore size={40} />
           </a>
         </div>
@@ -32,13 +32,13 @@ const Navbar = () => {
           )}
         </div>
         <nav className={`nav ${isOpen ? 'open' : ''}`}>
-          <a  className="nav_link" href='#home' onClick={(e) => handleClick(e, 'home')}>
+          <a  className="nav_link" href="#home" onClick={(e) => handleClick(e, 'home')}>
             <FaHome />
             Home
           </a>
           <a
             className="nav_link"
-            href='#about'
+            href="#about"
             onClick={(e) => handleClick(e, 'about')}
           >
             <FaUser />
@@ -46,7 +46,7 @@ const Navbar = () => {
           </a>
           <a
             className="nav_link"
-            href='#projects'
+            href="#projects"
             onClick={(e) => handleClick(e, 'projects')}
           >
             <FaCode />
@@ -54,12 +54,12 @@ const Navbar = () => {
           </a>
           <a
             className="nav_link"
-            href='#contact'
+            href="#contact"
             onClick={(e) => handleClick(e, 'contact')}>
             <FaAddressBook />
             Contact
           </a>
-          <a href=" " className="button" download>
+          <a href= {pdf} className="button" download="Resume1.pdf">
             <FaFileAlt/> Resume
           </a>
         </nav>
