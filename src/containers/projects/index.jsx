@@ -10,7 +10,7 @@ const projects = [
     title: 'BrushBazaar',
     desc: 'A MERN stack platform for artists to sell their art and drawings online.',
     mockup: pic1,
-    live: '   ',
+    live: 'https://brushbazaar.vercel.app/',
     code: 'https://github.com/AditiSingh00/BrushBazaar',
   },
   {
