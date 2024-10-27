@@ -17,7 +17,7 @@ const projects = [
     title: 'Pariwaahan',
     desc: 'MERN stack commercial vehicle booking system for easy vehicle reservations.',
     mockup: pic,
-    live: '   ',
+    live: 'https://pariwahan.vercel.app/',
     code: 'https://github.com/AditiSingh00/Commercial_Vechicle_Booking_System',
   },
 
