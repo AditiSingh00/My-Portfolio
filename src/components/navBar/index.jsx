@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import pdf from '../../images/Resume1.pdf'
+import pdf from '../../images/AditiSingh_WebDeveloper_Resume_N.docx'
 import { FaAppStore, FaUser, FaCode } from 'react-icons/fa6';
 import { FaHome, FaBars, FaTimes, FaAddressBook ,FaFileAlt} from 'react-icons/fa';
 import './styles.scss';
@@ -59,7 +59,11 @@ const Navbar = () => {
             <FaAddressBook />
             Contact
           </a>
-          <a href= {pdf} className="button" download="Resume1.pdf">
+          <a href= {pdf} 
+          // target="_blank" rel="noopener noreferrer" 
+          className="button" 
+          download="AditiSingh_WebDeveloper_Resume_N.docx"
+          >
             <FaFileAlt/> Resume
           </a>
         </nav>

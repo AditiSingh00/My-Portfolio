@@ -2,10 +2,18 @@ import React, { useState } from 'react';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
 import pic from '../../images/truck.png';
 import pic1 from '../../images/paint.png';
-import pic3 from '../../images/portfolio.png'
+import pic3 from '../../images/portfolio.png';
+import pic4 from '../../images/Nextstep.png';
 import './styles.scss';
 
 const projects = [
+  {
+    title: 'NextStep Ai',
+    desc: 'An AI-powered platform that helps job seekers build resumes, generate cover letters, and practice interview quizzes to prepare for job applications effectively.',
+    mockup: pic4,
+    live: 'https://next-step-ai-fawn.vercel.app/',
+    code: 'https://github.com/AditiSingh00/NextStep-Ai',
+  },
   {
     title: 'BrushBazaar',
     desc: 'A MERN stack platform for artists to sell their art and drawings online.',
@@ -25,8 +33,8 @@ const projects = [
     title: 'Portfolio',
     desc: 'A personal website built with React.js to showcase my projects and skills.',
     mockup: pic3,
-    live: '  ',
-    code: '  ',
+    live: 'https://aditisingh00.vercel.app/',
+    code: 'https://github.com/AditiSingh00/AditiSingh00',
   },
 ];
 
@@ -44,17 +52,9 @@ const Portfolio = () => {
             data-aos-once="false"
           >
             <img src={project.mockup} alt={`${project.title} mockup`} />
-            <h1
-              className="project-title"
-            >
-              {project.title}
-            </h1>
-            <h4 className='desc'>
-              {project.desc}
-            </h4>
-            <div
-              className="project-links"
-            >
+            <h1 className="project-title">{project.title}</h1>
+            <h4 className="desc">{project.desc}</h4>
+            <div className="project-links">
               <a
                 className="btn"
                 href={project.code}
